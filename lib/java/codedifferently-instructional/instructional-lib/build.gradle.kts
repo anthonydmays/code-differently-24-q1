@@ -28,6 +28,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation("com.google.guava:guava:31.1-jre")
+    implementation("com.google.code.gson:gson:2.10.1")
     implementation("org.projectlombok:lombok:1.18.30")
     implementation("org.springframework.boot:spring-boot-starter:3.2.2")
     implementation("at.favre.lib:bcrypt:0.10.2")
