@@ -35,13 +35,13 @@ public class admaysquiz implements QuizQuestionProvider {
 
   private QuizQuestion makeQuestion1() {
     return new QuizQuestion(
-        1, "What does NVME stand for?", "nonvolatile memory express"); // Provide an answer.
+        1, "What does NVME stand for?", ""); // Provide an answer.
   }
 
   private QuizQuestion makeQuestion2() {
     return new QuizQuestion(
         1,
         "Can you recieve graphics output from your motherboard? (Type y/n)",
-        "y"); // Provide an answer.
+        ""); // Provide an answer.
   }
 }
