@@ -26,4 +26,6 @@ public class ExpressionCalculator {
   public double pow(double base, double exponent) {
     return Math.pow(base, exponent);
   }
+
+  /** Some code generated using ChatGPT. */
 }
