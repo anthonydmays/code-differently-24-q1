@@ -1,10 +1,9 @@
 package com.codedifferently.lesson6;
 
+import com.codedifferently.lesson6.util.Helpers;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
-
-import com.codedifferently.lesson6.util.Helpers;
 
 @Configuration
 @SpringBootApplication(scanBasePackages = "com.codedifferently")
@@ -36,11 +35,11 @@ public class Lesson6 {
     int distance = Helpers.computeLexicographicDistance(a, b);
 
     if (distance < 0) {
-        return -1;
+      return -1;
     } else if (distance > 0) {
-        return 1;
+      return 1;
     } else {
-        return 0;
+      return 0;
     }
   }
 
@@ -55,31 +54,32 @@ public class Lesson6 {
    */
   public static String convertGpaToLetterGrade(double gpa) {
     if (gpa > 4.0) {
-        return "A+";
+      return "A+";
     } else if (gpa == 4.0) {
-      return "A"; 
+      return "A";
     } else if (gpa >= 3.7) {
-        return "A-";
+      return "A-";
     } else if (gpa >= 3.3) {
-        return "B+";
+      return "B+";
     } else if (gpa >= 3.0) {
-        return "B";
+      return "B";
     } else if (gpa >= 2.7) {
-        return "B-";
+      return "B-";
     } else if (gpa >= 2.3) {
-        return "C+";
+      return "C+";
     } else if (gpa >= 2.0) {
-        return "C";
+      return "C";
     } else if (gpa >= 1.7) {
-        return "C-";
+      return "C-";
     } else if (gpa >= 1.3) {
-        return "D+";
+      return "D+";
     } else if (gpa >= 1.0) {
-        return "D";
+      return "D";
     } else {
-        return "F";
+      return "F";
     }
-}
+  }
+
   /**
    * Computes the factorial of the given value of `n`.
    *
@@ -88,11 +88,11 @@ public class Lesson6 {
    */
   public static int computeFactorial(int n) {
     if (n < 0) {
-        throw new IllegalArgumentException("Factorial is not defined for negative numbers");
+      throw new IllegalArgumentException("Factorial is not defined for negative numbers");
     }
     int factorial = 1;
     for (int i = 1; i <= n; i++) {
-        factorial *= i;
+      factorial *= i;
     }
     return factorial;
   }
@@ -106,7 +106,7 @@ public class Lesson6 {
   public static double addNumbers(double[] values) {
     double sum = 0;
     for (double value : values) {
-        sum += value;
+      sum += value;
     }
     return sum;
   }
@@ -119,13 +119,13 @@ public class Lesson6 {
    */
   public static int[] getFirstNFibonacciNumbers(int n) {
     if (n <= 0) {
-        return new int[0];
+      return new int[0];
     }
     int[] fibonacci = new int[n];
     if (n > 0) fibonacci[0] = 1;
     if (n > 1) fibonacci[1] = 1;
     for (int i = 2; i < n; i++) {
-        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+      fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
     }
     return fibonacci;
   }
@@ -141,17 +141,17 @@ public class Lesson6 {
    */
   public static int binarySearch(int[] values, int start, int end, int value) {
     if (end < start) {
-        return -1;
+      return -1;
     }
 
     int pivotIndex = (start + end) / 2;
 
     if (values[pivotIndex] == value) {
-        return pivotIndex;
+      return pivotIndex;
     } else if (values[pivotIndex] > value) {
-        return binarySearch(values, start, pivotIndex - 1, value);
+      return binarySearch(values, start, pivotIndex - 1, value);
     } else {
-        return binarySearch(values, pivotIndex + 1, end, value);
+      return binarySearch(values, pivotIndex + 1, end, value);
     }
   }
 }
