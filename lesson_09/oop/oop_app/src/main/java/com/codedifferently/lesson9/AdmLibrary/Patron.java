@@ -4,18 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Represents a patron of the library.
- * A patron has a name and a list of books they have checked out.
- * This class provides methods to access the patron's name and checked-out books,
- * as well as to check out and return books.
+ * Represents a patron of the library. A patron has a name and a list of books they have checked
+ * out. This class provides methods to access the patron's name and checked-out books, as well as to
+ * check out and return books.
  */
 public class Patron {
   private String name;
   private List<Book> checkedOutBooks;
 
   /**
-   * Constructs a new Patron with the specified name.
-   * Initially, the patron has no books checked out.
+   * Constructs a new Patron with the specified name. Initially, the patron has no books checked
+   * out.
    *
    * @param name the name of the patron
    */

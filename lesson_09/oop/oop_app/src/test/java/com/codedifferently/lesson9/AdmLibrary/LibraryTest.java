@@ -1,20 +1,20 @@
 package com.codedifferently.lesson9.AdmLibrary;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 /**
- * Unit tests for the {@link Library} class.
- * This class provides tests to verify the functionality of the Library class methods.
+ * Unit tests for the {@link Library} class. This class provides tests to verify the functionality
+ * of the Library class methods.
  */
 public class LibraryTest {
 
   /**
-   * Tests the {@link Library#addBook(Book)} method.
-   * Verifies that a book is correctly added to the library's collection.
+   * Tests the {@link Library#addBook(Book)} method. Verifies that a book is correctly added to the
+   * library's collection.
    */
   @Test
   public void testAddBook() {
@@ -25,8 +25,8 @@ public class LibraryTest {
   }
 
   /**
-   * Tests the {@link Library#removeBook(Book)} method.
-   * Verifies that a book is correctly removed from the library's collection.
+   * Tests the {@link Library#removeBook(Book)} method. Verifies that a book is correctly removed
+   * from the library's collection.
    */
   @Test
   public void testRemoveBook() {
@@ -38,8 +38,8 @@ public class LibraryTest {
   }
 
   /**
-   * Tests the {@link Library#registerPatron(Patron)} method.
-   * Verifies that a patron is correctly registered with the library.
+   * Tests the {@link Library#registerPatron(Patron)} method. Verifies that a patron is correctly
+   * registered with the library.
    */
   @Test
   public void testRegisterPatron() {
@@ -50,8 +50,8 @@ public class LibraryTest {
   }
 
   /**
-   * Tests the {@link Library#checkOutBook(Patron, Book)} method.
-   * Verifies that a book is correctly checked out to a patron, and the book's status is updated.
+   * Tests the {@link Library#checkOutBook(Patron, Book)} method. Verifies that a book is correctly
+   * checked out to a patron, and the book's status is updated.
    */
   @Test
   public void testCheckOutBook() {
@@ -66,8 +66,8 @@ public class LibraryTest {
   }
 
   /**
-   * Tests the {@link Library#returnBook(Patron, Book)} method.
-   * Verifies that a book is correctly returned by a patron, and the book's status is updated.
+   * Tests the {@link Library#returnBook(Patron, Book)} method. Verifies that a book is correctly
+   * returned by a patron, and the book's status is updated.
    */
   @Test
   public void testReturnBook() {

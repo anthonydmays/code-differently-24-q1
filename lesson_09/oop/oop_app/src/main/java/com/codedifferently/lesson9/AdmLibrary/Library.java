@@ -4,18 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Represents a library.
- * A library contains a collection of books and a list of patrons.
- * This class provides methods to add and remove books, register patrons, check out books, and return books.
+ * Represents a library. A library contains a collection of books and a list of patrons. This class
+ * provides methods to add and remove books, register patrons, check out books, and return books.
  */
 public class Library {
   private List<Book> books;
   private List<Patron> patrons;
 
-  /**
-   * Constructs a new Library.
-   * Initially, the library contains no books or patrons.
-   */
+  /** Constructs a new Library. Initially, the library contains no books or patrons. */
   public Library() {
     this.books = new ArrayList<>();
     this.patrons = new ArrayList<>();
@@ -49,13 +45,12 @@ public class Library {
   }
 
   /**
-   * Checks out a book to a patron.
-   * If the book is available and not already checked out, it is marked as checked out
-   * and added to the patron's list of checked-out books.
-   * Otherwise, a message is printed indicating the book is not available for checkout.
+   * Checks out a book to a patron. If the book is available and not already checked out, it is
+   * marked as checked out and added to the patron's list of checked-out books. Otherwise, a message
+   * is printed indicating the book is not available for checkout.
    *
    * @param patron the patron checking out the book
-   * @param book   the book to check out
+   * @param book the book to check out
    */
   public void checkOutBook(Patron patron, Book book) {
     if (books.contains(book) && !book.isCheckedOut()) {
@@ -67,13 +62,12 @@ public class Library {
   }
 
   /**
-   * Returns a book that was checked out by a patron.
-   * If the book is in the patron's list of checked-out books, it is marked as returned
-   * and removed from the patron's list of checked-out books.
-   * Otherwise, a message is printed indicating the book was not checked out by this patron.
+   * Returns a book that was checked out by a patron. If the book is in the patron's list of
+   * checked-out books, it is marked as returned and removed from the patron's list of checked-out
+   * books. Otherwise, a message is printed indicating the book was not checked out by this patron.
    *
    * @param patron the patron returning the book
-   * @param book   the book to return
+   * @param book the book to return
    */
   public void returnBook(Patron patron, Book book) {
     if (patron.getCheckedOutBooks().contains(book)) {

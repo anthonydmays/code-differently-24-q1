@@ -3,9 +3,9 @@ package com.codedifferently.lesson9.AdmLibrary;
 import java.util.List;
 
 /**
- * Represents a book in the library.
- * A book has a title, an ISBN, a list of authors, a number of pages, and a checked-out status.
- * This class provides methods to access these properties and to check out or return the book.
+ * Represents a book in the library. A book has a title, an ISBN, a list of authors, a number of
+ * pages, and a checked-out status. This class provides methods to access these properties and to
+ * check out or return the book.
  */
 public class Book {
   private String title;
@@ -15,12 +15,12 @@ public class Book {
   private boolean isCheckedOut;
 
   /**
-   * Constructs a new Book with the specified title, ISBN, authors, and number of pages.
-   * Initially, the book is not checked out.
+   * Constructs a new Book with the specified title, ISBN, authors, and number of pages. Initially,
+   * the book is not checked out.
    *
-   * @param title         the title of the book
-   * @param isbn          the ISBN of the book
-   * @param authors       the list of authors of the book
+   * @param title the title of the book
+   * @param isbn the ISBN of the book
+   * @param authors the list of authors of the book
    * @param numberOfPages the number of pages in the book
    */
   public Book(String title, String isbn, List<String> authors, int numberOfPages) {
@@ -76,16 +76,12 @@ public class Book {
     return isCheckedOut;
   }
 
-  /**
-   * Marks the book as checked out.
-   */
+  /** Marks the book as checked out. */
   public void checkOut() {
     isCheckedOut = true;
   }
 
-  /**
-   * Marks the book as returned.
-   */
+  /** Marks the book as returned. */
   public void returnBook() {
     isCheckedOut = false;
   }
